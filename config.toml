@@ -1,0 +1,106 @@
+######################## default configuration ####################
+baseURL = "http://localhost"
+title = "Nisa Azizi's blog"
+theme = "twenty-twenty-hugo"
+languageName = "En"
+languageCode = "fr"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "10"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = [] # disable language from here
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+
+
+############################## Output ###############################
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "author"
+
+############################## navigation ###############################
+
+# main menu
+[[menu.main]]
+name = "Blog"
+URL = "/"
+weight = 1
+
+[[menu.main]]
+name = "À propos"
+URL = "about/"
+weight = 2
+
+
+
+# only desktop menu
+[[menu.desktop]]
+name = "À propos"
+URL = "about/"
+weight = 1
+
+
+#################### default parameters ################################
+[params]
+# Meta data
+description = "My blog"
+author = "Themefisher"
+
+# favicon
+[params.favicon]
+favicon = "images/favicon.png"
+
+# cookies
+[params.cookies]
+enable = false
+expire_days = 2
+
+# banner
+[params.banner]
+heading = "Bienvenue sur mon blog dédié au domaine du Community Management !"
+# image = "images/2020-landscape-1-2.png"
+
+# blog
+[params.blog]
+heading = "Découvre mes articles"
+
+# call to action
+[params.call_to_action]
+enable = false
+title = "Contact us for more information."
+content = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis"
+button_label = "Contact Us"
+button_url = "contact/"
+
+# gallery
+[params.gallery]
+enable = true
+
+[[params.gallery.gallery_item]]
+image = "images/2020-square-2.png"
+
+[[params.gallery.gallery_item]]
+image = "images/2020-square-1.png"
+
+
+# footer
+[params.footer]
+title = "À propos de ce site"
+content = "Ce site a été créé dans le cadre d'un exercice de veille technologique à la HEIG-VD."
+copyright = "Copyright &copy; 2021 a hugo theme by [themefisher](https://themefisher.com/hugo-themes/) ported from [WordPress Twenty Twenty](https://github.com/WordPress/twentytwenty)"
+
+############################# social site ########################
+[params.social]
+email = "nisa.azizi@heig-vd.ch"
+linkedin = "https://www.linkedin.com/in/nisa-azizi-210372227/"
